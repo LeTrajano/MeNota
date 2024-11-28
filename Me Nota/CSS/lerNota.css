@@ -1,77 +1,65 @@
-/* Estilo global */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f5f5f5;
-  height: 100vh; /* Altura total da tela */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-/* Contêiner geral */
-.container {
-  width: 100%;
-  max-width: 400px; /* Limita o tamanho para telas maiores */
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: white;
-  position: relative;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.form-container {
+  width: 90%;
+  background-color: #ffffff;
   border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  height: 100%;
 }
 
 /* Cabeçalho */
 .header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  max-width: 360px;
   background-color: #6FCF97;
-  padding: 10px 20px;
+  color: white;
+  padding: 12px 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-radius: 0 0 10px 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 400px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 1;
 }
 
 .header h2 {
-  color: white;
-  font-size: 18px;
   margin: 0;
+  font-size: 20px;
   text-align: center;
-  flex-grow: 1;
+  flex: 1; /* Centraliza o texto horizontalmente */
 }
 
+/* Botão de voltar*/
+
 .logout-button {
-  background-color: #006900;
+  background-color: #10571c;
   color: white;
   border: none;
-  padding: 8px 12px;
+  padding: 8px 15px;
   border-radius: 5px;
   font-size: 14px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .logout-button:hover {
-  background-color: #10571c;
+  background-color: #0e4818;
 }
 
+
 /* Formulário */
-.form-container {
-  margin-top: 100px; /* Espaço para o cabeçalho */
+
+.form-container form {
+  margin-top: 120px; /* Espaço suficiente para o cabeçalho */
   width: 100%;
   max-width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 0 20px; /* Espaçamento interno para telas pequenas */
   box-sizing: border-box;
 }
 

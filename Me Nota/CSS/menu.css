@@ -1,3 +1,67 @@
+/* Estilo Global */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.header {
+  background-color: #6FCF97;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0 0 10px 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.header h2 {
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+.logout-button {
+  background-color: #e57373;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background-color: #d32f2f;
+}
+
+.action-button {
+  background-color: #27ae60;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.action-button:hover {
+  background-color: #219653;
+}
+
+
 /* Tela Inicial (Menu) */
 .menu-container {
     display: flex;
@@ -93,6 +157,7 @@
     color: #333;
     text-align: center;
   }
+  
   /* Espaço entre o cabeçalho e a frase */
 .menu-container p {
     margin-top: 100px; /* Ajuste o valor conforme necessário */
